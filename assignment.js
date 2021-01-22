@@ -10,11 +10,11 @@ function kilometerToMeter(kilometers) {
 }
 
 //  function for calculating watch/mobile/laptop shopping budget
-function budgetCalculator(watch, mobile, laptop ) {
-    
+function budgetCalculator(watch, mobile, laptop) {
+
     //  price for per watch = $50
     var watchBudget = 50 * watch;
-    
+
     //  price for per mobile  = $100
     var mobileBudget = 100 * mobile;
 
@@ -42,7 +42,15 @@ function hotelCost(days) {
     }
 }
 
-var friends = ['kalam', 'jahid', 'sayham', 'jony', 'jahid2'];
+// function for find the biggest name of an Array using array.sort method.
 function megaFriend(friendList) {
-    
+
+    // array.sort function is used.
+    var biggestName = friends.sort( 
+        function (a, b) {
+            return b.length - a.length;
+        }
+    )[0]; // sob thke boro value ta store korbe karon boro theke choto sorting kora hoitase...position [0] te sob thke boro ta thkbe
+
+    return biggestName;
 }
