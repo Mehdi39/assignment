@@ -1,13 +1,36 @@
 
 // function for converting kilometer to meter.
 function kilometerToMeter(kilometers) {
-
-    // as we know 1000 meter = 1 kilometer.
-    var meter = 1000;
-    var result = kilometers * meter;
-
-    return result;
+    if (kilometers <= 0) {
+        var lol = "Be Positive, plz"
+        return lol;
+    } else {
+        // as we know 1000 meter = 1 kilometer.
+        var meter = 1000;
+        var result = kilometers * meter;
+        return result;
+    }
 }
+
+var lol = kilometerToMeter(1);
+console.log(lol);
+
+
+
+
+
+// // function for converting kilometer to meter.
+// function kilometerToMeter(kilometers) {
+    
+//     // as we know 1000 meter = 1 kilometer.
+//     var meter = 1000;
+//     var result = kilometers * meter;
+
+//     return result;
+// }
+
+// var lol = kilometerToMeter(5);
+// console.log(lol);
 
 //  function for calculating watch/mobile/laptop shopping budget
 function budgetCalculator(watch, mobile, laptop) {
